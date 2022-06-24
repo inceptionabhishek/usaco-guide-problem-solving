@@ -1,8 +1,11 @@
 ### Bronze Problem Solving with logic :-
-1. http://usaco.org/index.php?page=viewproblem2&cpid=1011
-Code :
 
-```
+1. http://usaco.org/index.php?page=viewproblem2&cpid=1011
+   Code :
+
+```c++
+
+
 #include<bits/stdc++.h>
 using namespace std;
 #define ll long long int
@@ -20,7 +23,6 @@ const double PI = 3.14159265358979323846;
 #else
 #define deb(...)
 #endif
-
 void solve() {
 	int n;
 	cin >> n;
@@ -34,7 +36,7 @@ void solve() {
 	}
 	for(auto j:x){
 		sort(all(j.ss),greater<int>());
-	}	
+	}
 	for(auto j:y){
 		sort(all(j.ss),greater<int>());
 	}
@@ -48,7 +50,6 @@ void solve() {
 	}
 	cout << maxy << endl;
 }
-
 int32_t main(){
 	// if (fopen("triangles.in", "r")) {
 	// 	freopen("triangles.in", "r", stdin);
